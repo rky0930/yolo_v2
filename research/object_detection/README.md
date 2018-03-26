@@ -163,7 +163,8 @@ version includes:
     * Accuracy: 0.7
     * Recal: 0.9
 * Frozen weight (trained on mscoco) for YOLOv2 model. ([download](https://drive.google.com/open?id=1g3RdX6xpKdkT9ovjB1G4E2coSPK_Gl1K))  
-  Final evaluation result: 0.442 (codalab.org, mscoco test-dev result) 
+  Final evaluation result: 
+    * mAP: 0.442 (codalab.org, mscoco test-dev result) 
 
 Added or Updated file list
 * Config:
