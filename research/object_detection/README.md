@@ -148,7 +148,7 @@ release includes:
   distributed training and evaluation pipelines via
   [Google Cloud](g3doc/running_on_cloud.md).
 
-### January 11, 2018
+### March 26, 2018
 
 In addition to base Tensorflow detection model definitions, this 
 version includes:
@@ -207,10 +207,6 @@ Added or Updated file list
   * research/object_detection/meta_architectures/yolo_meta_arch.py
 
 
-TO-DO (Need some help)
- * Write more unit-tests for above updated or added files.
-   * For Anchors, Loss, Feature map, model_builder
- * Improve detection result. 
 
 
 <b>Thanks to contributors</b>: Jonathan Huang, Vivek Rathod, Derek Chow,
