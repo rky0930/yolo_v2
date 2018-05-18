@@ -1,4 +1,4 @@
-Someone interested in **yolo_v2 using Object detecion API ** implementation. 
+Someone interested in **YOLO_v2 using Object Detecion API** implementation. 
 Just to go [object_detection_api](https://github.com/rky0930/yolo_v2/tree/master/research/object_detection)  
 
 The most of source codes originally come from [Tensorflow-models](https://github.com/tensorflow/models).  
