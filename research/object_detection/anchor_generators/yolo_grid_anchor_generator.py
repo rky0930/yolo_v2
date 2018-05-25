@@ -82,6 +82,7 @@ class YoloGridAnchorGenerator(anchor_generator.AnchorGenerator):
     if isinstance(anchors, list) and \
        all([isinstance(list_item, float) for list_item in anchors]) and \
        len(anchors)%2 == 0:
+      #self._anchors = list(zip(*[iter(anchors)]*2))
       self._anchors = zip(*[iter(anchors)]*2)
     else:
       raise ValueError('anchors is expected to be a '
@@ -110,7 +111,15 @@ class YoloGridAnchorGenerator(anchor_generator.AnchorGenerator):
       a integer, one for expected feature map to be passed to
       the Generate function.
     """
-    return [len(self._anchors)]
+    #print('test: ',type(self._anchors))
+    #print('len(self._anchors): ',len(self._anchors))
+    #return [len(self._anchors)]
+    print(id(self._anchors)) # 
+    print('len(self._anchors): ',id(list(self._anchors)))
+    
+    return [len(list(self._anchors))]
+
+    
 
   def _generate(self, feature_map_shape_list, im_height=1, im_width=1):
     """Generates a collection of bounding boxes to be used as anchors.
